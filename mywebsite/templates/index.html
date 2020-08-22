@@ -1,0 +1,26 @@
+<!-- indexnya mywebsite -->
+<html>
+<head>
+    <title>{{subjudul}}| {{judul}}</title>
+</head>
+<body>
+    <h1>{{subjudul}}-{{judul}}</h1>
+    <p><h2>Website ini dibuat dengan menggunakan Django</h2></p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, sint sed, exercitationem nisi optio maiores voluptas corrupti perspiciatis id ipsa porro iusto eos laboriosam dolores amet blanditiis, accusamus voluptate dolorum.</p>
+    
+    <ul>
+        <!-- {# ini adalah Templates Tags #} -->
+        {% for link,name in nav %}
+            <li><a href="{{link}}" title="{{name}}">{{name}}</a></li>
+        {% endfor %}
+    </ul> 
+    
+   
+
+
+    <!-- <ul>
+        <li><a href="/about" title="about">about</a></li>
+        <li><a href="/blog" title="blog">Blog</a></li>
+    </ul> -->
+</body>
+</html>
